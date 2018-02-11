@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "css.database.connection.first.link",
+    "type": "java.lang.String",
+    "description": "A description for 'css.database.connection.first.link'"
+  },
+  {
+    "name": "css.database.connection.second.link",
+    "type": "java.lang.String",
+    "description": "A description for 'css.database.connection.second.link'"
+  }
+]}
