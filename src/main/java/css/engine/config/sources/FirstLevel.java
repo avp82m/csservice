@@ -10,12 +10,12 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.env.MapPropertySource;
 import org.springframework.core.env.PropertySource;
 
-public class FirstLevelSource implements IConfigurationSource {
-	private static final Logger log = LoggerFactory.getLogger(FirstLevelSource.class);
+public class FirstLevel implements IConfigurationSource {
+	private static final Logger log = LoggerFactory.getLogger(FirstLevel.class);
 
 	private Environment env;
 	
-	public FirstLevelSource(Environment env){
+	public FirstLevel(Environment env){
 		this.env=env;
 	}
 	
