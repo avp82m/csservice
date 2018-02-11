@@ -20,6 +20,20 @@ public class Configuration {
 	@Autowired
 	private Environment env;
 	
+	public static String get(String key) {
+		if(params==null) {
+			log.error("Настройки не загружены");
+			return null;
+		}
+		
+		if(!params.containsKey(key.toUpperCase())) {
+			log.error("Настройка {} не найдена",key.toUpperCase());
+			return null;
+		}
+		
+		return params.get(key);
+	}
+	
 	HashMap<String,String> getFromSource(IConfigurationSource source){
 		return source.getParams();
 	}
